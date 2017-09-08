@@ -1,0 +1,15 @@
+This project uses SciPy and NumPy for data analysis and Matplotlib for making the graphs. The file format for the accelerometer data is CSV. In order to manually trim the data, graph it in the Threshold Crossing file and view the accelerometer data in OpenOffice since Excel uses a different file format. Keep deleted lines of data ponits and regraphing until the graph only shows the repetitions. Accelerometer Data folder contains trimmed accelerometer data
+
+
+Files:
+X,Y,Z Axes:
+This creates a figure of the accelerometer data showing the X, Y and Z axes.
+
+Threshold Crossing:
+This file will graph the accelerometer data after being converted to the magnitude of acceleration with and without a low pass filter. Everytime the graph crosses the zero cross line in one direction, it will count a repetition.
+
+FFT:
+This file uses a Fourier Transform to analyze the data. It will convert the accelerometer data into a frequency domain and will select the frequency with the largest amplitude to use. This frequency is multiplied by the time of data collection to get the steps.
+
+Complete Data Analysis:
+This will analyze all the data given in the arrays using all three analysis techniques. It will create a table in a CSV file giving the root mean square errors
